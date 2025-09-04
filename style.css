@@ -1,0 +1,49 @@
+ /* CSS Variables */
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #333333;
+    }
+
+    [data-theme="dark"] {
+      --bg-color: #333333;
+      --text-color: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    header {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1rem;
+    }
+
+    /* Toggle Button */
+    .toggle-btn {
+      cursor: pointer;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 20px;
+      background-color: var(--text-color);
+      color: var(--bg-color);
+      font-weight: bold;
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 24px;
+      margin: 2rem;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 2rem;
+      max-width: 600px;
+    }
